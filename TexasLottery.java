@@ -24,6 +24,7 @@ public class TexasLottery{
 
      PrintArr(userarr);
 
+     System.out.print('\n');
      PrintArr(randarr);
 
 
@@ -64,8 +65,10 @@ public static int MatchCounter(int userarr[], int randarr[]){
    int counter = 0;
 
    for(int i = 0; i < userarr.length; i++){
-      if(userarr[i] == randarr[i]){
+      for(int j = 0; j < userarr.length; j++){
+      if(userarr[i] == randarr[j]){
          counter++;
+      }
       }
    }
       
