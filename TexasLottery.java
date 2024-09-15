@@ -1,10 +1,18 @@
 import java.util.*;
+//Ryan Mathews
+//CMPS 4143 cont-prog
+//Tina Johnson
+//9/20/2024
+//This program takes user input and creates an array, it also creates an
+//array of random numbers to be the lottery. The user numbers get compared to the 
+//random array and shows how many matches it got with the "lottery".
 
 
 public class TexasLottery{
 
     public static void main(String[] args) {
 
+   //Creating variables and arrays.
      int userarr[] = new int[6];
      int randarr[] = new int[6];
      int num = 0;
@@ -14,6 +22,7 @@ public class TexasLottery{
 
      Scanner in = new Scanner(System.in);
    
+    //calling my functions
      heading();
      RandNums(rand, randarr);
      PlayerNums(userarr, num, in);
@@ -40,6 +49,7 @@ public class TexasLottery{
 
 
 
+//prints a heading with name and explanation of what the code is doing
 public static void heading(){
    //heading
 
@@ -50,6 +60,8 @@ public static void heading(){
    System.out.println("---------------------------------------------\n");
 
 }
+
+//creating my random array 
 public static void RandNums(Random rand, int randarr[]){
 
    int max = 54;
@@ -59,6 +71,8 @@ public static void RandNums(Random rand, int randarr[]){
    }
 }
 
+
+//taking user numbers and storing in array
 public static void PlayerNums(int userarr[], int num, Scanner in){
    System.out.println("Please enter 6 numbers in the range of 1-54: ");
      for (int i = 0; i < userarr.length; i++){
@@ -69,6 +83,7 @@ public static void PlayerNums(int userarr[], int num, Scanner in){
      }
 }
 
+//Counts the matches from the user array and random array
 public static int MatchCounter(int userarr[], int randarr[]){
    int counter = 0;
 
@@ -84,6 +99,7 @@ public static int MatchCounter(int userarr[], int randarr[]){
    }
 
 
+//Just prints the array that is in the parameter list
 public static void PrintArr(int Array[]){
    //print
    for (int i = 0; i < Array.length; i++){
