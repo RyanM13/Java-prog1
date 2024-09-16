@@ -1,4 +1,3 @@
-import java.util.*;
 //Ryan Mathews
 //CMPS 4143 cont-prog
 //Tina Johnson
@@ -7,6 +6,7 @@ import java.util.*;
 //array of random numbers to be the lottery. The user numbers get compared to the 
 //random array and shows how many matches it got with the "lottery".
 
+import java.util.*;
 
 public class TexasLottery{
 
@@ -53,7 +53,7 @@ public class TexasLottery{
 public static void heading(){
    //heading
 
-   System.out.print("Name: Ryan Mathews\n\n");
+   System.out.print("\nName: Ryan Mathews\n\n");
    System.out.println("This program asks the user for 6 numbers and then uses those numbers");
    System.out.print("to enter the lottery, which is randomly generated. It checks to see");
    System.out.print("If there are any matches from users array to the random array.\n");
